@@ -13,8 +13,9 @@ const NavHeader = () => {
     <section className='nav-outer-container'>
       <h1>NFL Genie 🧞‍♂️</h1>
       <select className='week-drop-box'>
-        { buildWeeks().map(week => <option>week {week}</option>) }
+        { buildWeeks().map(week => <option key={week} >week {week}</option>) }
       </select>
+      <button className='login-button'>log in</button>
     </section>
   )
 
