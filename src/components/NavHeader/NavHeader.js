@@ -15,7 +15,9 @@ const NavHeader = () => {
       <select className='week-drop-box'>
         { buildWeeks().map(week => <option key={week} >week {week}</option>) }
       </select>
+      <p>userName</p>
       <button className='login-button'>log in</button>
+      <button className='save-button'>save</button>
     </section>
   )
 
