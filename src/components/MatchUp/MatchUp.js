@@ -34,17 +34,22 @@ const MatchUp = () => {
     <section className='match-up-outer-container'>
       <p className='away-home-text'>away = home</p>
       <hr></hr>
-      {
-        games.map(game => {
+      <div className='games-container'>
+        {games.map(game => {
           return (
-            <div className='game-box'>
-              <div className='team-logo'></div>
-              <p className='team'>{game.away}</p>
-              <p className='team'>{game.home}</p>
+            <div className='single-match-container'>
+              <div className='away-team-box'>
+                <div className='team-logo'></div>
+                <p className='team-name'>{game.away}</p>
+              </div>
+              <p>=</p>
+              <div className='home-team-box'>
+                <p className='team-name'>{game.home}</p>
+                <div className='team-logo'></div>
+              </div>
             </div>
-          )
-        })
-      }
+        )})}
+      </div>
     </section>
   )
 }
