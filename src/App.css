@@ -1,3 +1,10 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .App {
   text-align: center;
+  background-color: lightgrey;
+  height: 100vh;
 }

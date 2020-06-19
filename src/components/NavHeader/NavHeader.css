@@ -1,0 +1,24 @@
+.nav-outer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background-color: grey;
+  width: 100%;
+}
+
+.week-drop-box {
+  height: 30px;
+}
+
+.login-button,
+.save-button {
+  width: 60px;
+  height: 30px;
+}
+
+.login-button:hover,
+.save-button:hover,
+.week-drop-box:hover {
+  cursor: pointer;
+}

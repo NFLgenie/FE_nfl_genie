@@ -1,12 +1,12 @@
 import React from 'react';
+import NavHeader from './components/NavHeader/NavHeader';
 import './App.css';
 
 const App = () => {
   return (
-    <div className="App">
-      <h1>🏈 NFL Genie 🧞‍♂️</h1>
-      <p>go sports!</p>
-    </div>
+    <main className="App">
+      <NavHeader />
+    </main>
   );
 }
 
