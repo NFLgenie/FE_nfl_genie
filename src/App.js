@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <h1>NFL Genie 🏈</h1>
+      <h1>🏈 NFL Genie 🧞‍♂️</h1>
+      <p>go sports!</p>
     </div>
   );
 }
