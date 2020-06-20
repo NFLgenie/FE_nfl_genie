@@ -1,0 +1,46 @@
+.match-up-outer-container {
+  width: 270px;
+  height: 300px;
+  border: 2px solid black;
+  margin: 15px;
+}
+
+.away-home-text {
+  padding: 10px;
+}
+
+.single-match-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.team-logo {
+  height: 30px;
+  width: 30px;
+  background-color: blue;
+  margin: 2px;
+}
+
+.away-team-box,
+.home-team-box {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  width: 80px;
+}
+
+.away-team-box:hover,
+.home-team-box:hover,
+.tie-button:hover {
+  cursor: pointer;
+}
+
+.tie-button {
+  width: 20px;
+}
+
+.selected {
+  background-color: yellow;
+}
