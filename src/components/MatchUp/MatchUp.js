@@ -1,44 +1,9 @@
 import React, { useState } from 'react';
 import './MatchUp.css';
 
-const MatchUp = () => {
+const MatchUp = props => {
 
-  let gameData = [
-    {
-      "gameID": "001",
-      "away": "HOU",
-      "home": "KC",
-      "date": "THU-09-10-0820PM-EST",
-      "awayOffBye": false,
-      "homeOffBye": false,
-      "predictAwayWins" : false,
-      "predictHomeWins" : false,
-      "predictTie" : false
-    },
-    {
-      "gameID": "002",
-      "away": "NYJ",
-      "home": "BUF",
-      "date": "SUN-08-13-0100PM-EST",
-      "awayOffBye": false,
-      "homeOffBye": false,
-      "predictAwayWins" : false,
-      "predictHomeWins" : false,
-      "predictTie" : false
-    },
-    {
-      "gameID": "003",
-      "away": "IND",
-      "home": "JAC",
-      "date": "THR-08-10-0820PM-EST",
-      "awayOffBye": false,
-      "homeOffBye": false,
-      "predictAwayWins" : false,
-      "predictHomeWins" : false,
-      "predictTie" : false
-    }
-  ]
-  const [games, setGames] = useState(gameData);
+  const [games, setGames] = useState(props.gameData);
 
   const onPredictionSelection = (id, winner) => {
     let target = games.find(game => game.gameID === id)
@@ -67,6 +32,7 @@ const MatchUp = () => {
 
   return(
     <section className='match-up-outer-container'>
+      <h1>{props.title}</h1>
       <p className='away-home-text'>away = home</p>
       <hr></hr>
       <div className='games-container'>
