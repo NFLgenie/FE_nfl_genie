@@ -12,7 +12,8 @@ const MatchUp = () => {
       "awayOffBye": false,
       "homeOffBye": false,
       "predictAwayWins" : false,
-      "predictHomeWins" : false
+      "predictHomeWins" : false,
+      "predictTie" : false
     },
     {
       "gameID": "002",
@@ -22,7 +23,8 @@ const MatchUp = () => {
       "awayOffBye": false,
       "homeOffBye": false,
       "predictAwayWins" : false,
-      "predictHomeWins" : false
+      "predictHomeWins" : false,
+      "predictTie" : false
     },
     {
       "gameID": "003",
@@ -32,17 +34,28 @@ const MatchUp = () => {
       "awayOffBye": false,
       "homeOffBye": false,
       "predictAwayWins" : false,
-      "predictHomeWins" : false
+      "predictHomeWins" : false,
+      "predictTie" : false
     }
   ]
   const [games, setGames] = useState(gameData);
 
-  const onPredictionSelection = id => {
+  const onPredictionSelection = (id, awayOrHome) => {
     let target = games.find(game => game.gameID === id)
-    console.log(target);
-    if (target.predictAwayWins === false) {
-      target.predictAwayWins = true
-    }
+    setGames(games.reduce((acc, game) => {
+      if (game.gameID === target.gameID && awayOrHome === 'Away') {
+        game.predictAwayWins = true
+        game.predictHomeWins = false
+        acc.push(game)
+      } else if (game.gameID === target.gameID && awayOrHome === 'Home') {
+        game.predictHomeWins = true
+        game.predictAwayWins = false
+        acc.push(game)
+      } else {
+        acc.push(game)
+      }
+      return acc;
+    },[]))
   }
 
   return(
@@ -53,11 +66,11 @@ const MatchUp = () => {
         {games.map(game => {
           return (
             <div className='single-match-container'>
-              <button onClick={() => onPredictionSelection(game.gameID)} className={game.predictAwayWins ? 'away-team-box selected' : 'away-team-box'}>
+              <button onClick={() => onPredictionSelection(game.gameID, 'Away')} className={game.predictAwayWins ? 'away-team-box selected' : 'away-team-box'}>
                 <div className='team-logo'></div>{game.away}
               </button>
               <p> = </p>
-              <button onClick={() => onPredictionSelection(game.gameID)} className={game.predictHomeWins ? 'home-team-box selected' : 'home-team-box'}>
+              <button onClick={() => onPredictionSelection(game.gameID, 'Home')} className={game.predictHomeWins ? 'home-team-box selected' : 'home-team-box'}>
                 {game.home}<div className='team-logo'></div>
               </button>
             </div>
