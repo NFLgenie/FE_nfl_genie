@@ -148,7 +148,7 @@ const App = () => {
     {
       "gameID": "016",
       "away": "DAL",
-      "home": "LA",
+      "home": "LAC",
       "date": "THR-08-10-0820PM-EST",
       "awayOffBye": false,
       "homeOffBye": false,

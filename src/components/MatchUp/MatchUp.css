@@ -19,7 +19,6 @@
 .team-logo {
   height: 30px;
   width: 30px;
-  background-color: blue;
   margin: 2px;
 }
 
@@ -28,7 +27,13 @@
   display: flex;
   align-items: center;
   padding: 4px;
-  width: 80px;
+  width: 85px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.home-team-box {
+  padding-left: 10px;
 }
 
 .away-team-box:hover,
@@ -38,8 +43,9 @@
 }
 
 .tie-button {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
 }
 
 .selected {

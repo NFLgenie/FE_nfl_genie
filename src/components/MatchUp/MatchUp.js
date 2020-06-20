@@ -26,11 +26,11 @@ const MatchUp = props => {
           return (
             <div key={game.gameID} className='single-match-container'>
               <button onClick={() => onPredictionSelection(game.gameID, 'Away')} className={game.prediction === 'Away' ? 'away-team-box selected' : 'away-team-box'}>
-                <div className='team-logo'></div>{game.away}
+                <img src={require(`../../assets/teamLogos/${game.away}.svg`)} alt={`${game.away} logo`} className='team-logo'/>{game.away}
               </button>
               <button onClick={() => onPredictionSelection(game.gameID, 'Tie')} className={game.prediction === 'Tie' ? 'tie-button selected' : 'tie-button'}>{game.prediction === "Tie" ? 'tie' : 'vs'}</button>
               <button onClick={() => onPredictionSelection(game.gameID, 'Home')} className={game.prediction === 'Home' ? 'home-team-box selected' : 'home-team-box'}>
-                {game.home}<div className='team-logo'></div>
+                {game.home}<img src={require(`../../assets/teamLogos/${game.home}.svg`)} alt={`${game.home} logo`} className='team-logo'/>
               </button>
             </div>
         )})}
