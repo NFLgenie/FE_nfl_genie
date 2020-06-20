@@ -40,19 +40,26 @@ const MatchUp = () => {
   ]
   const [games, setGames] = useState(gameData);
 
-  const onPredictionSelection = (id, awayOrHome) => {
+  const onPredictionSelection = (id, winner) => {
     let target = games.find(game => game.gameID === id)
     setGames(games.reduce((acc, game) => {
-      if (game.gameID === target.gameID && awayOrHome === 'Away') {
+      if (game.gameID === target.gameID && winner === 'Away') {
         game.predictAwayWins = true
         game.predictHomeWins = false
-        acc.push(game)
-      } else if (game.gameID === target.gameID && awayOrHome === 'Home') {
+        game.predictTie = false
+        acc.push(game);
+      } else if (game.gameID === target.gameID && winner === 'Home') {
         game.predictHomeWins = true
         game.predictAwayWins = false
-        acc.push(game)
+        game.predictTie = false
+        acc.push(game);
+      } else if (game.gameID === target.gameID && winner === 'Tie') {
+        game.predictTie = true
+        game.predictHomeWins = false
+        game.predictAwayWins = false
+        acc.push(game);
       } else {
-        acc.push(game)
+        acc.push(game);
       }
       return acc;
     },[]))
@@ -65,11 +72,11 @@ const MatchUp = () => {
       <div className='games-container'>
         {games.map(game => {
           return (
-            <div className='single-match-container'>
+            <div key={game.gameID} className='single-match-container'>
               <button onClick={() => onPredictionSelection(game.gameID, 'Away')} className={game.predictAwayWins ? 'away-team-box selected' : 'away-team-box'}>
                 <div className='team-logo'></div>{game.away}
               </button>
-              <p> = </p>
+              <button onClick={() => onPredictionSelection(game.gameID, 'Tie')} className={game.predictTie ? 'tie-button selected' : 'tie-button'}>=</button>
               <button onClick={() => onPredictionSelection(game.gameID, 'Home')} className={game.predictHomeWins ? 'home-team-box selected' : 'home-team-box'}>
                 {game.home}<div className='team-logo'></div>
               </button>
