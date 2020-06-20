@@ -9,17 +9,11 @@ const MatchUp = props => {
     let target = games.find(game => game.gameID === id)
     setGames(games.map(game => {
       if (game.gameID === target.gameID && winner === 'Away') {
-        game.predictAwayWins = true
-        game.predictHomeWins = false
-        game.predictTie = false
+        game.prediction = 'Away'
       } else if (game.gameID === target.gameID && winner === 'Home') {
-        game.predictHomeWins = true
-        game.predictAwayWins = false
-        game.predictTie = false
+        game.prediction = 'Home'
       } else if (game.gameID === target.gameID && winner === 'Tie') {
-        game.predictTie = true
-        game.predictHomeWins = false
-        game.predictAwayWins = false
+        game.prediction = 'Tie'
       }
       return game;
     }))
@@ -34,11 +28,11 @@ const MatchUp = props => {
         {games.map(game => {
           return (
             <div key={game.gameID} className='single-match-container'>
-              <button onClick={() => onPredictionSelection(game.gameID, 'Away')} className={game.predictAwayWins ? 'away-team-box selected' : 'away-team-box'}>
+              <button onClick={() => onPredictionSelection(game.gameID, 'Away')} className={game.prediction === 'Away' ? 'away-team-box selected' : 'away-team-box'}>
                 <div className='team-logo'></div>{game.away}
               </button>
-              <button onClick={() => onPredictionSelection(game.gameID, 'Tie')} className={game.predictTie ? 'tie-button selected' : 'tie-button'}>{game.predictTie ? 'tie' : 'vs'}</button>
-              <button onClick={() => onPredictionSelection(game.gameID, 'Home')} className={game.predictHomeWins ? 'home-team-box selected' : 'home-team-box'}>
+              <button onClick={() => onPredictionSelection(game.gameID, 'Tie')} className={game.prediction === 'Tie' ? 'tie-button selected' : 'tie-button'}>{game.prediction === "Tie" ? 'tie' : 'vs'}</button>
+              <button onClick={() => onPredictionSelection(game.gameID, 'Home')} className={game.prediction === 'Home' ? 'home-team-box selected' : 'home-team-box'}>
                 {game.home}<div className='team-logo'></div>
               </button>
             </div>
