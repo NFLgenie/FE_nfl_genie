@@ -13,10 +13,6 @@ const App = () => {
         "date": "THU-09-10-0820PM-EST",
         "awayOffBye": false,
         "homeOffBye": false,
-        "predictAwayWins" : false,
-        "predictHomeWins" : false,
-        "predictTie" : false,
-        "prediction" : null,
         "prediction" : null
       },
       {
@@ -26,9 +22,6 @@ const App = () => {
         "date": "SUN-08-13-0100PM-EST",
         "awayOffBye": false,
         "homeOffBye": false,
-        "predictAwayWins" : false,
-        "predictHomeWins" : false,
-        "predictTie" : false,
         "prediction" : null
       },
       {
@@ -38,9 +31,6 @@ const App = () => {
         "date": "THR-08-10-0820PM-EST",
         "awayOffBye": false,
         "homeOffBye": false,
-        "predictAwayWins" : false,
-        "predictHomeWins" : false,
-        "predictTie" : false,
         "prediction" : null
       },
       {
@@ -50,9 +40,6 @@ const App = () => {
         "date": "THR-08-10-0820PM-EST",
         "awayOffBye": false,
         "homeOffBye": false,
-        "predictAwayWins" : false,
-        "predictHomeWins" : false,
-        "predictTie" : false,
         "prediction" : null
       },
       {
@@ -62,9 +49,6 @@ const App = () => {
         "date": "THR-08-10-0820PM-EST",
         "awayOffBye": false,
         "homeOffBye": false,
-        "predictAwayWins" : false,
-        "predictHomeWins" : false,
-        "predictTie" : false,
         "prediction" : null
       },
       {
@@ -74,9 +58,6 @@ const App = () => {
         "date": "THR-08-10-0820PM-EST",
         "awayOffBye": false,
         "homeOffBye": false,
-        "predictAwayWins" : false,
-        "predictHomeWins" : false,
-        "predictTie" : false,
         "prediction" : null
       },
       {
@@ -86,9 +67,6 @@ const App = () => {
         "date": "THR-08-10-0820PM-EST",
         "awayOffBye": false,
         "homeOffBye": false,
-        "predictAwayWins" : false,
-        "predictHomeWins" : false,
-        "predictTie" : false,
         "prediction" : null
       }
     ]
@@ -100,9 +78,6 @@ const App = () => {
         "date": "THR-08-10-0820PM-EST",
         "awayOffBye": false,
         "homeOffBye": false,
-        "predictAwayWins" : false,
-        "predictHomeWins" : false,
-        "predictTie" : false,
         "prediction" : null
       },
       {
@@ -112,9 +87,6 @@ const App = () => {
         "date": "THR-08-10-0820PM-EST",
         "awayOffBye": false,
         "homeOffBye": false,
-        "predictAwayWins" : false,
-        "predictHomeWins" : false,
-        "predictTie" : false,
         "prediction" : null
       }
   ]
@@ -126,9 +98,6 @@ const App = () => {
       "date": "THR-08-10-0820PM-EST",
       "awayOffBye": false,
       "homeOffBye": false,
-      "predictAwayWins" : false,
-      "predictHomeWins" : false,
-      "predictTie" : false,
       "prediction" : null
     },
     {
@@ -138,9 +107,6 @@ const App = () => {
       "date": "THR-08-10-0820PM-EST",
       "awayOffBye": false,
       "homeOffBye": false,
-      "predictAwayWins" : false,
-      "predictHomeWins" : false,
-      "predictTie" : false,
       "prediction" : null
     },
     {
@@ -150,9 +116,6 @@ const App = () => {
       "date": "THR-08-10-0820PM-EST",
       "awayOffBye": false,
       "homeOffBye": false,
-      "predictAwayWins" : false,
-      "predictHomeWins" : false,
-      "predictTie" : false,
       "prediction" : null
     },
     {
@@ -162,9 +125,6 @@ const App = () => {
       "date": "THR-08-10-0820PM-EST",
       "awayOffBye": false,
       "homeOffBye": false,
-      "predictAwayWins" : false,
-      "predictHomeWins" : false,
-      "predictTie" : false,
       "prediction" : null
     },
     {
@@ -174,9 +134,6 @@ const App = () => {
       "date": "THR-08-10-0820PM-EST",
       "awayOffBye": false,
       "homeOffBye": false,
-      "predictAwayWins" : false,
-      "predictHomeWins" : false,
-      "predictTie" : false,
       "prediction" : null
     },
     {
@@ -186,9 +143,6 @@ const App = () => {
       "date": "THR-08-10-0820PM-EST",
       "awayOffBye": false,
       "homeOffBye": false,
-      "predictAwayWins" : false,
-      "predictHomeWins" : false,
-      "predictTie" : false,
       "prediction" : null
     },
     {
@@ -198,9 +152,6 @@ const App = () => {
       "date": "THR-08-10-0820PM-EST",
       "awayOffBye": false,
       "homeOffBye": false,
-      "predictAwayWins" : false,
-      "predictHomeWins" : false,
-      "predictTie" : false,
       "prediction" : null
     }
   ]
