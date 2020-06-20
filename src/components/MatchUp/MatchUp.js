@@ -8,12 +8,8 @@ const MatchUp = props => {
   const onPredictionSelection = (id, winner) => {
     let target = games.find(game => game.gameID === id)
     setGames(games.map(game => {
-      if (game.gameID === target.gameID && winner === 'Away') {
-        game.prediction = 'Away'
-      } else if (game.gameID === target.gameID && winner === 'Home') {
-        game.prediction = 'Home'
-      } else if (game.gameID === target.gameID && winner === 'Tie') {
-        game.prediction = 'Tie'
+      if (game.gameID === target.gameID) {
+        game.prediction = winner
       }
       return game;
     }))
