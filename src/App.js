@@ -8,6 +8,7 @@ const App = () => {
     <main className="App">
       <NavHeader />
       <MatchUp />
+      <MatchUp />
     </main>
   );
 }
