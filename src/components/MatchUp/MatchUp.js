@@ -7,27 +7,22 @@ const MatchUp = props => {
 
   const onPredictionSelection = (id, winner) => {
     let target = games.find(game => game.gameID === id)
-    setGames(games.reduce((acc, game) => {
+    setGames(games.map(game => {
       if (game.gameID === target.gameID && winner === 'Away') {
         game.predictAwayWins = true
         game.predictHomeWins = false
         game.predictTie = false
-        acc.push(game);
       } else if (game.gameID === target.gameID && winner === 'Home') {
         game.predictHomeWins = true
         game.predictAwayWins = false
         game.predictTie = false
-        acc.push(game);
       } else if (game.gameID === target.gameID && winner === 'Tie') {
         game.predictTie = true
         game.predictHomeWins = false
         game.predictAwayWins = false
-        acc.push(game);
-      } else {
-        acc.push(game);
       }
-      return acc;
-    },[]))
+      return game;
+    }))
   }
 
   return(
@@ -42,7 +37,7 @@ const MatchUp = props => {
               <button onClick={() => onPredictionSelection(game.gameID, 'Away')} className={game.predictAwayWins ? 'away-team-box selected' : 'away-team-box'}>
                 <div className='team-logo'></div>{game.away}
               </button>
-              <button onClick={() => onPredictionSelection(game.gameID, 'Tie')} className={game.predictTie ? 'tie-button selected' : 'tie-button'}>=</button>
+              <button onClick={() => onPredictionSelection(game.gameID, 'Tie')} className={game.predictTie ? 'tie-button selected' : 'tie-button'}>{game.predictTie ? 'tie' : 'vs'}</button>
               <button onClick={() => onPredictionSelection(game.gameID, 'Home')} className={game.predictHomeWins ? 'home-team-box selected' : 'home-team-box'}>
                 {game.home}<div className='team-logo'></div>
               </button>
