@@ -15,7 +15,9 @@ const App = () => {
         "homeOffBye": false,
         "predictAwayWins" : false,
         "predictHomeWins" : false,
-        "predictTie" : false
+        "predictTie" : false,
+        "prediction" : null,
+        "prediction" : null
       },
       {
         "gameID": "002",
@@ -26,7 +28,8 @@ const App = () => {
         "homeOffBye": false,
         "predictAwayWins" : false,
         "predictHomeWins" : false,
-        "predictTie" : false
+        "predictTie" : false,
+        "prediction" : null
       },
       {
         "gameID": "003",
@@ -37,7 +40,8 @@ const App = () => {
         "homeOffBye": false,
         "predictAwayWins" : false,
         "predictHomeWins" : false,
-        "predictTie" : false
+        "predictTie" : false,
+        "prediction" : null
       },
       {
         "gameID": "004",
@@ -48,7 +52,8 @@ const App = () => {
         "homeOffBye": false,
         "predictAwayWins" : false,
         "predictHomeWins" : false,
-        "predictTie" : false
+        "predictTie" : false,
+        "prediction" : null
       },
       {
         "gameID": "005",
@@ -59,7 +64,8 @@ const App = () => {
         "homeOffBye": false,
         "predictAwayWins" : false,
         "predictHomeWins" : false,
-        "predictTie" : false
+        "predictTie" : false,
+        "prediction" : null
       },
       {
         "gameID": "006",
@@ -70,7 +76,8 @@ const App = () => {
         "homeOffBye": false,
         "predictAwayWins" : false,
         "predictHomeWins" : false,
-        "predictTie" : false
+        "predictTie" : false,
+        "prediction" : null
       },
       {
         "gameID": "007",
@@ -81,7 +88,8 @@ const App = () => {
         "homeOffBye": false,
         "predictAwayWins" : false,
         "predictHomeWins" : false,
-        "predictTie" : false
+        "predictTie" : false,
+        "prediction" : null
       }
     ]
   let gameDataAFCvsNFC = [
@@ -94,7 +102,8 @@ const App = () => {
         "homeOffBye": false,
         "predictAwayWins" : false,
         "predictHomeWins" : false,
-        "predictTie" : false
+        "predictTie" : false,
+        "prediction" : null
       },
       {
         "gameID": "009",
@@ -105,7 +114,8 @@ const App = () => {
         "homeOffBye": false,
         "predictAwayWins" : false,
         "predictHomeWins" : false,
-        "predictTie" : false
+        "predictTie" : false,
+        "prediction" : null
       }
   ]
   let gameDataNFC = [
@@ -118,7 +128,8 @@ const App = () => {
       "homeOffBye": false,
       "predictAwayWins" : false,
       "predictHomeWins" : false,
-      "predictTie" : false
+      "predictTie" : false,
+      "prediction" : null
     },
     {
       "gameID": "011",
@@ -129,7 +140,8 @@ const App = () => {
       "homeOffBye": false,
       "predictAwayWins" : false,
       "predictHomeWins" : false,
-      "predictTie" : false
+      "predictTie" : false,
+      "prediction" : null
     },
     {
       "gameID": "012",
@@ -140,7 +152,8 @@ const App = () => {
       "homeOffBye": false,
       "predictAwayWins" : false,
       "predictHomeWins" : false,
-      "predictTie" : false
+      "predictTie" : false,
+      "prediction" : null
     },
     {
       "gameID": "013",
@@ -151,7 +164,8 @@ const App = () => {
       "homeOffBye": false,
       "predictAwayWins" : false,
       "predictHomeWins" : false,
-      "predictTie" : false
+      "predictTie" : false,
+      "prediction" : null
     },
     {
       "gameID": "014",
@@ -162,7 +176,8 @@ const App = () => {
       "homeOffBye": false,
       "predictAwayWins" : false,
       "predictHomeWins" : false,
-      "predictTie" : false
+      "predictTie" : false,
+      "prediction" : null
     },
     {
       "gameID": "015",
@@ -173,7 +188,8 @@ const App = () => {
       "homeOffBye": false,
       "predictAwayWins" : false,
       "predictHomeWins" : false,
-      "predictTie" : false
+      "predictTie" : false,
+      "prediction" : null
     },
     {
       "gameID": "016",
@@ -184,7 +200,8 @@ const App = () => {
       "homeOffBye": false,
       "predictAwayWins" : false,
       "predictHomeWins" : false,
-      "predictTie" : false
+      "predictTie" : false,
+      "prediction" : null
     }
   ]
 
