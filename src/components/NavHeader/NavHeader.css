@@ -3,8 +3,9 @@
   justify-content: space-around;
   align-items: center;
   height: 60px;
-  background-color: grey;
+  background-color: #37710f;
   width: 100%;
+  border-bottom: 2px solid #000;
 }
 
 .week-drop-box {

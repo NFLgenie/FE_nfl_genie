@@ -28,7 +28,7 @@ const App = () => {
         "gameID": "003",
         "away": "IND",
         "home": "JAC",
-        "date": "THR-08-10-0820PM-EST",
+        "date": "SAT-08-10-0820PM-EST",
         "awayOffBye": false,
         "homeOffBye": false,
         "prediction" : null
@@ -46,7 +46,7 @@ const App = () => {
         "gameID": "005",
         "away": "CLE",
         "home": "BAL",
-        "date": "THR-08-10-0820PM-EST",
+        "date": "SUN-08-10-0820PM-EST",
         "awayOffBye": false,
         "homeOffBye": false,
         "prediction" : null
@@ -55,7 +55,7 @@ const App = () => {
         "gameID": "006",
         "away": "LAC",
         "home": "CIN",
-        "date": "THR-08-10-0820PM-EST",
+        "date": "MON-08-10-0820PM-EST",
         "awayOffBye": false,
         "homeOffBye": false,
         "prediction" : null
@@ -75,7 +75,7 @@ const App = () => {
         "gameID": "008",
         "away": "LV",
         "home": "CAR",
-        "date": "THR-08-10-0820PM-EST",
+        "date": "SUN-08-10-0820PM-EST",
         "awayOffBye": false,
         "homeOffBye": false,
         "prediction" : null
@@ -95,7 +95,7 @@ const App = () => {
       "gameID": "010",
       "away": "SEA",
       "home": "ATL",
-      "date": "THR-08-10-0820PM-EST",
+      "date": "MON-08-10-0820PM-EST",
       "awayOffBye": false,
       "homeOffBye": false,
       "prediction" : null
@@ -104,7 +104,7 @@ const App = () => {
       "gameID": "011",
       "away": "CHI",
       "home": "DET",
-      "date": "THR-08-10-0820PM-EST",
+      "date": "FRI-08-10-0820PM-EST",
       "awayOffBye": false,
       "homeOffBye": false,
       "prediction" : null
@@ -122,7 +122,7 @@ const App = () => {
       "gameID": "013",
       "away": "GB",
       "home": "MIN",
-      "date": "THR-08-10-0820PM-EST",
+      "date": "SAT-08-10-0820PM-EST",
       "awayOffBye": false,
       "homeOffBye": false,
       "prediction" : null
@@ -140,7 +140,7 @@ const App = () => {
       "gameID": "015",
       "away": "TB",
       "home": "NO",
-      "date": "THR-08-10-0820PM-EST",
+      "date": "SUN-08-10-0820PM-EST",
       "awayOffBye": false,
       "homeOffBye": false,
       "prediction" : null
@@ -149,7 +149,7 @@ const App = () => {
       "gameID": "016",
       "away": "DAL",
       "home": "LAC",
-      "date": "THR-08-10-0820PM-EST",
+      "date": "SAT-08-10-0820PM-EST",
       "awayOffBye": false,
       "homeOffBye": false,
       "prediction" : null
