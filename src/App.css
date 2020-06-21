@@ -5,7 +5,10 @@
 
 .App {
   text-align: center;
-  background-color: lightgrey;
+  background: center/100% url(./assets/grass_background.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   height: 100vh;
 }
 
