@@ -161,14 +161,14 @@ const App = () => {
     <main className='App'>
       <NavHeader />
       <div className='game-board'>
+        <CurrentRecord title={'AFC'}/>
         <MatchUp gameData={gameDataAFC} title={'AFC'}/>
-        <CurrentRecord />
+        <MatchUp gameData={gameDataAFCvsNFC} title={'AFC vs NFC'}/>
+        <MatchUp gameData={gameDataNFC} title={'NFC'}/>
+        
       </div>
     </main>
   );
 }
 
 export default App;
-
-// <MatchUp gameData={gameDataAFCvsNFC} title={'AFC vs NFC'}/>
-// <MatchUp gameData={gameDataNFC} title={'NFC'}/>
