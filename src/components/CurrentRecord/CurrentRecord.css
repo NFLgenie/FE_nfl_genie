@@ -1,0 +1,74 @@
+.current-record-outer-container {
+  width: 270px;
+  height: 400px;
+  margin: 15px;
+  background-color: rgb(53, 53, 53, 0.5);
+}
+
+.label-container {
+  display: flex;
+}
+
+.current-record-container {
+  padding-top: 5px;
+}
+
+.heading-labels,
+.rank-label,
+.rank-text,
+.conf-label,
+.WLT-label,
+.WLT-text {
+  color: #FFF;
+  display: inline;
+  margin: 0px 5px;
+  text-transform: uppercase;
+  font-size: 90%;
+}
+
+.rank-label {
+  margin-left: 12px;
+}
+
+.WLT-label {
+ margin-left: 85px;
+}
+
+.conf-label {
+  margin-left: 20px;
+}
+
+.WLT-text {
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.rank-text {
+  margin: 0px 10px;
+  font-weight: bold;
+}
+
+.team-record-logo {
+  height: 30px;
+  width: 30px;
+  padding: 0px 5px 0px 10px;
+}
+
+.team-record-logo-button {
+  height: 40px;
+  width: 90px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.team-record-logo-button:hover {
+  cursor: pointer;
+}
+
+.singe-record-container {
+  display: flex;
+  align-items: center;
+  margin: 4px;
+  padding: 3px 0px;
+}

@@ -10,6 +10,7 @@
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
+  overflow-y: scroll;
 }
 
 .game-board {
@@ -17,4 +18,5 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 70px;
 }
