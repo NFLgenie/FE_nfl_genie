@@ -1,7 +1,6 @@
 .match-up-outer-container {
   width: 270px;
   height: auto;
-  border: 2px solid black;
   margin: 15px;
   background-color: rgb(53, 53, 53, 0.5);
   /* background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
@@ -9,16 +8,19 @@
 
 .title {
   color: #FFF;
+  margin: 5px;
 }
 
 .away-home-text {
   padding: 10px;
   color: #FFF;
+  display: inline;
+  margin: 0px 30px;
 }
 
 .single-match-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: 10px 0px;
 }
@@ -62,13 +64,9 @@
   height: 40px;
   border: 2px solid #757575;
   font-size: 70%;
+  margin: 0px 20px;
 }
 
 .selected {
-  background-color: yellow;
-}
-
-.vs-text {
-  font-size: 70%;
-  margin: 0px 50px;
+  background-color: #ffe501;
 }
