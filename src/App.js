@@ -1,6 +1,7 @@
 import React from 'react';
 import NavHeader from './components/NavHeader/NavHeader';
 import MatchUp from './components/MatchUp/MatchUp';
+import CurrentRecord from './components/CurrentRecord/CurrentRecord';
 import './App.css';
 
 const App = () => {
@@ -160,9 +161,11 @@ const App = () => {
     <main className='App'>
       <NavHeader />
       <div className='game-board'>
+        <CurrentRecord title={'AFC'}/>
         <MatchUp gameData={gameDataAFC} title={'AFC'}/>
         <MatchUp gameData={gameDataAFCvsNFC} title={'AFC vs NFC'}/>
         <MatchUp gameData={gameDataNFC} title={'NFC'}/>
+        
       </div>
     </main>
   );

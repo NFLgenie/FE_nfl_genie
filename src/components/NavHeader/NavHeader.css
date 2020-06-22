@@ -6,6 +6,7 @@
   background-color: #efefef;
   width: 100%;
   border-bottom: 2px solid #000;
+  position: fixed;
 }
 
 .week-drop-box,
@@ -20,4 +21,5 @@
 .save-button:hover,
 .week-drop-box:hover {
   cursor: pointer;
+  background-color: #ffe501;
 }
