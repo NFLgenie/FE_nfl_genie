@@ -19,7 +19,8 @@ const MatchUp = props => {
   return(
     <section className='match-up-outer-container'>
       <h1 className='title'>{props.title}</h1>
-      <p className='away-home-text'>away <span className='vs-text'>vs</span> home</p>
+      <p className='away-home-text'>away</p>
+      <p className='away-home-text'>home</p>
       <hr></hr>
       <div className='games-container'>
         {games.map(game => {
