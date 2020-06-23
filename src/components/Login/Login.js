@@ -8,6 +8,7 @@ const Login = () => {
       <h1 className='login-text'>login</h1>
       <input className='login-input' placeholder='username...'/>
       <input className='login-input' placeholder='password...' />
+      <button className='login-submit-button'>submit</button>
     </section>
   )
 }
