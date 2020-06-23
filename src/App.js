@@ -166,9 +166,7 @@ const App = () => {
       </div>
 
       <div className='game-board'>
-        <MatchUp gameData={gameDataAFC} title={'AFC'}/>
-        <MatchUp gameData={gameDataNFC} title={'NFC'}/>
-        <MatchUp gameData={gameDataAFCvsNFC} title={'AFC vs NFC'}/>
+
       </div>
 
       <div className='right-column'>
@@ -180,3 +178,7 @@ const App = () => {
 }
 
 export default App;
+
+// <MatchUp gameData={gameDataAFC} title={'AFC'}/>
+// <MatchUp gameData={gameDataNFC} title={'NFC'}/>
+// <MatchUp gameData={gameDataAFCvsNFC} title={'AFC vs NFC'}/>
