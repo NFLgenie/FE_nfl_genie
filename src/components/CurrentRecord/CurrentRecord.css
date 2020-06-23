@@ -7,7 +7,8 @@
 
 .label-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 10px 0px;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
 }
 
 .current-record-container {
@@ -19,8 +20,7 @@
 .rank-text,
 .conf-label,
 .WLT-text,
-.WLT-label
-{
+.WLT-label {
   color: #FFF;
   display: inline;
   margin: 0px 5px;
@@ -57,10 +57,12 @@
   border-radius: 20px;
   display: flex;
   align-items: center;
+  background-color: #efefef;
 }
 
 .team-record-logo-button:hover {
   cursor: pointer;
+  background-color: #ffe501;
 }
 
 .singe-record-container {
@@ -69,5 +71,5 @@
   margin: 4px;
   padding: 3px 0px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 2fr 2fr;
 }
