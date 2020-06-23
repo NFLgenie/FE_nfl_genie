@@ -40,6 +40,7 @@
   padding: 4px;
   width: 85px;
   height: 40px;
+  background-color: #efefef;
 }
 
 .away-team-box {
@@ -67,6 +68,7 @@
   border: 2px solid #757575;
   font-size: 70%;
   margin: 0px 20px;
+  background-color: #efefef;
 }
 
 .selected {

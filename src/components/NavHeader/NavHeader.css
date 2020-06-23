@@ -5,7 +5,6 @@
   height: 60px;
   background-color: #efefef;
   width: 100%;
-  /* border-bottom: 2px solid #000; */
   position: fixed;
   box-shadow: 0px 5px 13px 0px #000;
 }
@@ -16,6 +15,10 @@
   width: 80px;
   height: 30px;
   border-radius: 15px;
+}
+
+.week-drop-box {
+  padding-left: 10px;
 }
 
 .login-button:hover,
