@@ -160,13 +160,21 @@ const App = () => {
   return (
     <main className='App'>
       <NavHeader />
-      <div className='game-board'>
+
+      <div className='left-column'>
         <CurrentRecord title={'AFC'}/>
-        <MatchUp gameData={gameDataAFC} title={'AFC'}/>
-        <MatchUp gameData={gameDataAFCvsNFC} title={'AFC vs NFC'}/>
-        <MatchUp gameData={gameDataNFC} title={'NFC'}/>
-        
       </div>
+
+      <div className='game-board'>
+        <MatchUp gameData={gameDataAFC} title={'AFC'}/>
+        <MatchUp gameData={gameDataNFC} title={'NFC'}/>
+        <MatchUp gameData={gameDataAFCvsNFC} title={'AFC vs NFC'}/>
+      </div>
+
+      <div className='right-column'>
+        <CurrentRecord title={'NFC'}/>
+      </div>
+
     </main>
   );
 }
