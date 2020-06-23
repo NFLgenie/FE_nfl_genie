@@ -17,9 +17,9 @@ const NavHeader = () => {
         { buildWeeks().map(week => <option key={week}>{week}</option>) }
       </select>
       <p>predictions made: <strong>50%</strong></p>
-      <p>userName</p>
+      <p>mikeTyson294</p>
       <button className='save-button'>save</button>
-      <button className='login-button'>log in</button>
+      <button className='login-button'>log out</button>
     </section>
   )
 }

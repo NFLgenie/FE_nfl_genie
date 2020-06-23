@@ -2,6 +2,7 @@ import React from 'react';
 import NavHeader from './components/NavHeader/NavHeader';
 import MatchUp from './components/MatchUp/MatchUp';
 import CurrentRecord from './components/CurrentRecord/CurrentRecord';
+import Login from './components/Login/Login';
 import './App.css';
 
 const App = () => {
@@ -166,9 +167,7 @@ const App = () => {
       </div>
 
       <div className='game-board'>
-        <MatchUp gameData={gameDataAFC} title={'AFC'}/>
-        <MatchUp gameData={gameDataNFC} title={'NFC'}/>
-        <MatchUp gameData={gameDataAFCvsNFC} title={'AFC vs NFC'}/>
+        <Login />
       </div>
 
       <div className='right-column'>
@@ -180,3 +179,7 @@ const App = () => {
 }
 
 export default App;
+
+// <MatchUp gameData={gameDataAFC} title={'AFC'}/>
+// <MatchUp gameData={gameDataNFC} title={'NFC'}/>
+// <MatchUp gameData={gameDataAFCvsNFC} title={'AFC vs NFC'}/>

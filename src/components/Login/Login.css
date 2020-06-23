@@ -1,0 +1,32 @@
+.login-outer-container {
+  height: 300px;
+  width: 500px;
+  background-color: rgb(53, 53, 53, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-text {
+  color: #FFF;
+  margin: 20px 0px;
+}
+
+.login-input,
+.login-submit-button {
+  width: 200px;
+  height: 33px;
+  border-radius: 20px;
+  margin: 10px 0px;
+  padding-left: 20px;
+}
+
+.login-submit-button {
+  padding-left: 0px;
+  width: 100px;
+}
+
+.login-submit-button:hover {
+  cursor: pointer;
+  background-color: #ffe501;
+}
