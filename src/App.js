@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import NavHeader from './components/NavHeader/NavHeader';
 import MatchUp from './components/MatchUp/MatchUp';
 import CurrentRecord from './components/CurrentRecord/CurrentRecord';
@@ -160,26 +161,30 @@ const App = () => {
 
   return (
     <main className='App'>
-      <NavHeader />
-
-      <div className='left-column'>
-        <CurrentRecord title={'AFC'}/>
-      </div>
-
-      <div className='game-board'>
-        <Login />
-      </div>
-
-      <div className='right-column'>
-        <CurrentRecord title={'NFC'}/>
-      </div>
-
+      <Switch>
+        <Route exact path='/'>
+          <NavHeader />
+          <div className='left-column'>
+            <CurrentRecord title={'AFC'}/>
+          </div>
+          <div className='game-board'>
+            <MatchUp gameData={gameDataAFC} title={'AFC'}/>
+            <MatchUp gameData={gameDataNFC} title={'NFC'}/>
+            <MatchUp gameData={gameDataAFCvsNFC} title={'AFC vs NFC'}/>
+          </div>
+          <div className='right-column'>
+            <CurrentRecord title={'NFC'}/>
+          </div>
+        </Route>
+        <Route exact path='/login'>
+          <div className='root-login-outer-container'>
+            <Login />
+          </div>
+        </Route>
+        <Redirect to='/'/>
+      </Switch>
     </main>
   );
 }
 
 export default App;
-
-// <MatchUp gameData={gameDataAFC} title={'AFC'}/>
-// <MatchUp gameData={gameDataNFC} title={'NFC'}/>
-// <MatchUp gameData={gameDataAFCvsNFC} title={'AFC vs NFC'}/>
