@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './NavHeader.css';
 
 const NavHeader = () => {
@@ -19,7 +20,7 @@ const NavHeader = () => {
       <p>predictions made: <strong>50%</strong></p>
       <p>mikeTyson294</p>
       <button className='save-button'>save</button>
-      <button className='login-button'>log out</button>
+      <Link to={'/login'}><button className='login-button'>log out</button></Link>
     </section>
   )
 }
