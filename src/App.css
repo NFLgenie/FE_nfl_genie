@@ -11,6 +11,16 @@
   background-size: cover;
   height: 100vh;
   overflow-y: scroll;
+  display: flex;
+}
+
+.left-column,
+.right-column {
+ padding-top: 70px;
+ height: 100%;
+ width: 25%;
+ display: flex;
+ justify-content: center;
 }
 
 .game-board {
@@ -18,5 +28,7 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  justify-content: space-around;
   padding-top: 70px;
+  width: 50%;
 }
