@@ -1,12 +1,13 @@
 .current-record-outer-container {
   width: 270px;
-  height: 400px;
+  height: auto;
   margin: 15px;
   background-color: rgb(53, 53, 53, 0.5);
 }
 
 .label-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .current-record-container {
@@ -17,8 +18,9 @@
 .rank-label,
 .rank-text,
 .conf-label,
-.WLT-label,
-.WLT-text {
+.WLT-text,
+.WLT-label
+{
   color: #FFF;
   display: inline;
   margin: 0px 5px;
@@ -26,27 +28,22 @@
   font-size: 90%;
 }
 
-.rank-label {
-  margin-left: 12px;
-}
-
-.WLT-label {
- margin-left: 85px;
-}
-
-.conf-label {
-  margin-left: 20px;
-}
-
-.WLT-text {
-  margin-left: 20px;
-  font-weight: bold;
-}
-
+.WLT-text,
 .rank-text {
-  margin: 0px 10px;
   font-weight: bold;
 }
+
+/* .rank-label {
+  margin-left: 12px;
+} */
+
+/* .WLT-label {
+ margin-left: 90px;
+} */
+
+/* .conf-label {
+  margin-left: 20px;
+} */
 
 .team-record-logo {
   height: 30px;
@@ -71,4 +68,6 @@
   align-items: center;
   margin: 4px;
   padding: 3px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
