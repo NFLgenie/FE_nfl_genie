@@ -5,10 +5,9 @@ const CurrentRecord = props => {
 
   return(
     <section className='current-record-outer-container'>
-      <h1 className='title'>{props.title}</h1>
       <div className='label-container'>
         <p className='rank-label'>rank</p>
-        <p className='rank-label'>team</p>
+        <p className='rank-label'>{props.title}</p>
         <p className='WLT-label'>w-l-t</p>
         <p className='conf-label'>conf</p>
       </div>
