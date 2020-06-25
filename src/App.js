@@ -15,7 +15,7 @@ const App = () => {
         "away": "HOU",
         "home": "KC",
         "date": "THU-09-10-0820PM-EST",
-        "awayOffBye": false,
+        "awayOffBye": true,
         "homeOffBye": false,
         "prediction" : null
       },
@@ -25,7 +25,7 @@ const App = () => {
         "home": "BUF",
         "date": "SUN-08-13-0100PM-EST",
         "awayOffBye": false,
-        "homeOffBye": false,
+        "homeOffBye": true,
         "prediction" : null
       },
       {
