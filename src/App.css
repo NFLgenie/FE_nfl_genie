@@ -25,9 +25,7 @@
 
 .game-board {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
   justify-content: space-around;
   padding-top: 70px;
   width: 50%;

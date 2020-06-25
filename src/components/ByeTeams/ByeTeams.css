@@ -1,0 +1,18 @@
+.bye-teams-outer-container {
+  width: 270px;
+  height: auto;
+  margin: 20px 15px;
+  background-color: rgb(53, 53, 53, 0.5);
+}
+
+.bye-team-logo {
+  height: 36px;
+  width: 88px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #efefef;
+  font-size: 85%;
+  margin: 10px;
+  border: 2px solid #757575;
+}
