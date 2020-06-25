@@ -4,6 +4,7 @@ import NavHeader from './components/NavHeader/NavHeader';
 import MatchUp from './components/MatchUp/MatchUp';
 import CurrentRecord from './components/CurrentRecord/CurrentRecord';
 import Login from './components/Login/Login';
+import ByeTeams from './components/ByeTeams/ByeTeams';
 import './App.css';
 
 const App = () => {
@@ -14,7 +15,7 @@ const App = () => {
         "away": "HOU",
         "home": "KC",
         "date": "THU-09-10-0820PM-EST",
-        "awayOffBye": false,
+        "awayOffBye": true,
         "homeOffBye": false,
         "prediction" : null
       },
@@ -24,7 +25,7 @@ const App = () => {
         "home": "BUF",
         "date": "SUN-08-13-0100PM-EST",
         "awayOffBye": false,
-        "homeOffBye": false,
+        "homeOffBye": true,
         "prediction" : null
       },
       {
@@ -171,6 +172,7 @@ const App = () => {
             <MatchUp gameData={gameDataAFC} title={'AFC'}/>
             <MatchUp gameData={gameDataNFC} title={'NFC'}/>
             <MatchUp gameData={gameDataAFCvsNFC} title={'AFC vs NFC'}/>
+            <ByeTeams />
           </div>
           <div className='right-column'>
             <CurrentRecord title={'NFC'}/>
