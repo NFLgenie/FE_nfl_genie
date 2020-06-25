@@ -4,6 +4,7 @@ import NavHeader from './components/NavHeader/NavHeader';
 import MatchUp from './components/MatchUp/MatchUp';
 import CurrentRecord from './components/CurrentRecord/CurrentRecord';
 import Login from './components/Login/Login';
+import ByeTeams from './components/ByeTeams/ByeTeams';
 import './App.css';
 
 const App = () => {
@@ -171,6 +172,7 @@ const App = () => {
             <MatchUp gameData={gameDataAFC} title={'AFC'}/>
             <MatchUp gameData={gameDataNFC} title={'NFC'}/>
             <MatchUp gameData={gameDataAFCvsNFC} title={'AFC vs NFC'}/>
+            <ByeTeams />
           </div>
           <div className='right-column'>
             <CurrentRecord title={'NFC'}/>
