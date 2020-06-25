@@ -6,10 +6,10 @@ const Login = () => {
 
   return (
     <section className='login-outer-container'>
-      <h1 className='login-text'>NFL Genie ‍🏈</h1>
+      <h1 className='login-text'>‍🏈 NFL Genie</h1>
       <input className='login-input' placeholder='username...'/>
       <input className='login-input' placeholder='password...' />
-      <Link to={'/'}><button className='login-submit-button'>submit</button></Link>
+      <Link to={'/'}><button className='login-submit-button'>login</button></Link>
     </section>
   )
 }
